@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Your Montessori Toy Recommendations:</title>
+  <link rel="icon" type="image/png" href="static/favicon5.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Your Montessori toy recommendations are here! </h1>
+    <p>Top 5 recommendations for your child!</p> 
+  </div>
+
+<ul>
+    {% for t in toy_recommendations%}
+    <li>{{ t['title'][0] }}</li>
+    <p> Price: {{ t['price'][0] }}</p>
+    <img src="{{ t['image'][0] }}" width="250" alt="Sorry. The image not available now.">
+    <a href="{{ t['link'][0] }}" class="link-secondary">Go to toy on Amazon</a>
+    <p></p>
+    <p></p>
+    {% endfor %}
+</ul>
+
+
+
+<p>
+<a href="/">Go to the main page</a>
+</p>
+
+<hr>
+
+
+<hr>
+
+<i>author: Narges</i>
+
+</body>
+
+</html>

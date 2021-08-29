@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Montessori Toy Recommender</title>
+  <link rel="icon" type="image/png" href="static/favicon5.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Montessori Toy Recommender</h1>
+  <p>Finding the right toy is easy now!</p> 
+</div>
+
+
+<div class="container">
+  <div class="row" 100%>
+      <div class="col-md-5">
+        <div class="col"><img class="img-fluid" src="static/toy.jpg"   alt="Cinque Terre">
+          <p>
+            Photo by <a href="https://unsplash.com/@jackieboylhart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jackie Hope</a> on <a href="https://unsplash.com/s/photos/montessori?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h3>What is Montessori?</h3>
+        <p>The Montessori method of education was developed by Italian physician Maria Montessori. Emphasizing independence, it views children as naturally eager for knowledge and capable of initiating learning in a sufficiently supportive and well-prepared learning environment.</p>
+        <p> Montessori toys...
+          <li>... are simple</li>
+          <li>... are based in reality</li>
+          <li>... are made of natural materials</li>
+          <li>... are unctional and constructive</li>
+          <li>... play offers limited choices (no overstimulation)</li>
+        </p>
+        <p>
+          <form action="/recommender">
+
+          <label for="usr">Age of child in months:</label>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="age1" class="form-check-input" value="1">0-24
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="age2" class="form-check-input" value="1">25-71
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="age3" class="form-check-input" value="1">72+
+            </label>
+          </div>
+
+          <p></p>
+         
+         <label for="usr">Choose a skill the toy helps develop:</label>
+         
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="motor" class="form-check-input" value="1">Fine motor
+            </label>
+          </div>
+        
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="lanugage" class="form-check-input" value="1">Language
+            </label>
+          </div>
+        
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="stem" class="form-check-input" value="1">STEM
+            </label>
+          </div>
+        
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="emotional" class="form-check-input" value="1">Emotional
+            </label>
+          </div>
+        
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="social" class="form-check-input" value="1">Social
+            </label>
+            <p></p>
+          </div>
+          <button id="button" type="submit" class="btn btn-primary pull-right">Let the fun begin!</button>
+        </form>
+        </p>
+      </div>
+  </div>
+</div>
+
+<i>author: Narges</i>
+
+</body>
+</html>
